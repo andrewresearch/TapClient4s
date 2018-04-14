@@ -16,7 +16,7 @@ class Connect(hostUrl:String = "http://localhost:9000", endpoint:String = "/grap
   def fetchSchema: Js.Value = this.tapConnect(buildQuery("schema")) match {
       case None => Js.Arr()
       case Some(json) =>
-        println(json)
+        //println(json)
         val currentSchema:ArrayBuffer[Js.Value] = json("data")("__schema")("queryType")("fields").arr
         currentSchema.foreach { field =>
           println(field)
