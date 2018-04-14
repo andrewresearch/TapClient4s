@@ -1,14 +1,15 @@
-[![https://img.shields.io/badge/license-Apache%202.0-blue.svg](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[ ![Download](https://api.bintray.com/packages/heta/heta-tap/tapclient4s/images/download.svg?version=0.1.1) ](https://bintray.com/heta/heta-tap/tapclient4s/0.1.1/link) [![https://img.shields.io/badge/license-Apache%202.0-blue.svg](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 # TapClient4s
-Scala client for [TAP](https://github.com/heta-io/tap)
+Scala client library for [TAP](https://github.com/heta-io/tap)
 
 ### Installation
 
-Currently, this library needs to be built from source. Soon, it will be available in BinTray so that you can added it to SBT as follows:
+The library is available in BinTray. Add it to your `build.sbt` as follows:
 
 ```sbtshell
-libraryDependencies += "io.het" %% "tapclient4s" % "0.1.1"
+libraryDependencies += "io.heta" %% "tapclient4s" % "0.1.1"
+resolvers += Resolver.bintrayRepo("heta", "heta-tap")
 ```
 
 ### Basic Example
