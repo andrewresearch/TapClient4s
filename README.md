@@ -8,15 +8,17 @@ Scala client library for [TAP](https://github.com/heta-io/tap)
 The library is available in BinTray. Add it to your `build.sbt` as follows:
 
 ```sbtshell
-libraryDependencies += "io.heta" %% "tapclient4s" % "0.1.1"
+libraryDependencies += "io.heta" %% "tapclient4s" % "0.1.2"
 resolvers += Resolver.bintrayRepo("heta", "heta-tap")
 ```
 
 ### Basic Example
 
 ```scala
+import io.heta.TapConnection
+
 // Create TAP Connection
-val tap = new Connect("http://tap.yourdomain.com")
+val tap = new TapConnection("http://tap.is-qut.nlytx.io")
 
 // Get and print the Current Schema
 tap.fetchSchema

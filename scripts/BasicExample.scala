@@ -1,6 +1,8 @@
+import io.heta.TapConnection
+import io.heta.Queries
 
 // Create TAP Connection
-val tap = new Connect("http://tap.is-qut.nlytx.io")
+val tap = new TapConnection("http://tap.is-qut.nlytx.io")
 
 // Get and print the Current Schema
 tap.fetchSchema
@@ -13,3 +15,4 @@ val json = tap.analyseText("metrics",text)
 
 println()
 println(s"METRICS:\n$json")
+

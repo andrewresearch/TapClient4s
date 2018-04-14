@@ -1,3 +1,4 @@
+package io.heta
 
 import scala.collection.mutable
 import ujson._
@@ -5,7 +6,7 @@ import scalaj.http._
 
 import scala.collection.mutable.ArrayBuffer
 
-class Connect(hostUrl:String = "http://localhost:9000", endpoint:String = "/graphql") {
+class TapConnection(hostUrl:String = "http://localhost:9000", endpoint:String = "/graphql") {
 
   private var currentSchemaNameTypes:mutable.HashMap[String,String] = mutable.HashMap[String,String]()
 
