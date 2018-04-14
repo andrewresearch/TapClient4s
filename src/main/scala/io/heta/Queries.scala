@@ -1,3 +1,5 @@
+package io.heta
+
 import scala.collection.immutable.HashMap
 
 object Queries {
